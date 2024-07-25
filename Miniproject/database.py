@@ -5,11 +5,12 @@ from psycopg2 import sql
 # Función para conectar a la base de datos PostgreSQL
 def connect_to_db():
     conn = psycopg2.connect(
-        database="StockData",
-        user="postgres",
-        password="Ma260901",
-        host="localhost",
-        port=5432
+        #You need to create database before conection
+        database="database",
+        user="Your PostgreSQL user",
+        password="Your Password",
+        host="host",
+        port=5432 #Default port
     )
     return conn
 
